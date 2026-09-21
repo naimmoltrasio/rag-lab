@@ -4,7 +4,7 @@ __pycache__/
 .pytest_cache/
 
 # Environment variables
-.env\
+.env/
 
 # Virtual environment
 venv/
