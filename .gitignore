@@ -10,7 +10,7 @@ __pycache__/
 venv/
 
 # Vector store 
-chroma_db/
+chroma_langchain_db/
 db/
 
 # System files
