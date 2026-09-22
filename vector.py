@@ -15,8 +15,8 @@ if add_documents:
     ids = []
     for index, row in df.iterrows():
         document = Document(
-            page_content=row["Title"] + " " + row["review"],
-            metadata={"rating": row["rating"], "date": row["date"]},
+            page_content=row["Title"] + " " + row["Review"],
+            metadata={"rating": row["Rating"], "date": row["Date"]},
             id = str(index)
         )
         ids.append(str(index))
