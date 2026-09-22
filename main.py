@@ -10,5 +10,11 @@ prompt = ChatPromptTemplate.from_messages([
 
 chain = prompt | llm
 
-result = chain.invoke({"input": "What is the capital of France?"})
-print(result)
+while True:
+    print("\n--- New Question ---")
+    question = input("Enter your question (or type 'q' to quit): ")
+    print("\n--- Answer ---")
+    if question.lower() == 'q':
+        break
+    result = chain.invoke({"input": question})
+    print(result)
