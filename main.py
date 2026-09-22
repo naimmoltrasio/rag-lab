@@ -13,8 +13,8 @@ chain = prompt | llm
 while True:
     print("\n--- New Question ---")
     question = input("Enter your question (or type 'q' to quit): ")
-    print("\n--- Answer ---")
     if question.lower() == 'q':
         break
+    print("\n--- Answer ---")
     result = chain.invoke({"input": question})
     print(result)
